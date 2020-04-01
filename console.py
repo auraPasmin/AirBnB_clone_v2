@@ -48,7 +48,7 @@ class HBNBCommand(cmd.Cmd):
                 if "=" in elem:
                     split = elem.split("=")
                     if split[1][0] == "\"":
-                            split[1] = split[1][1:-1]
+                        split[1] = split[1][1:-1]
                         split[1] = split[1].replace('_', ' ').replace('"', '\\"')
                     elif split[1].isdigit():
                         split[1] = int(split[1])
