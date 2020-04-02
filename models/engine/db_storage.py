@@ -14,10 +14,7 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 
 
 class DBStorage:
-    """This class save instances to a mysql db
-    Attributes:
-        __engine: create the interfaces of comunication with db
-        __session: open a comunication with the db
+    """storage data base.
     """
     __engine = None
     __session = None
