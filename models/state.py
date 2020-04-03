@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is the state class"""
+"""This is the state class."""
 from models.base_model import BaseModel, Base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
@@ -9,9 +9,9 @@ from models.city import City
 
 
 class State(BaseModel, Base):
-    """This is the class for State
+    """This is the class for State.
     Attributes:
-        name: input name
+        name: input name.
     """
     __tablename__ = 'states'
 
@@ -23,7 +23,7 @@ class State(BaseModel, Base):
     else:
         @property
         def cities(self):
-            """Return cities"""
+            """Return cities."""
             all_cities = models.engine.all(City)
             all_cities_state = []
             for key, value in all_cities.items():
