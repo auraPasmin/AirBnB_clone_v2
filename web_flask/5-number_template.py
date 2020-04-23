@@ -8,7 +8,7 @@ Write a script that starts a Flask web application:
 /number/<n>:
 /number_template/<n>:
 """
-from flask import Flask
+from flask import Flask, escape, request, render_template
 
 app = Flask(__name__)
 
